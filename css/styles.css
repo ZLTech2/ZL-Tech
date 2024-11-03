@@ -1,0 +1,563 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #e5e0da;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  background: rgb(30, 38, 42);
+  height: 15vh;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-left: 10%;
+}
+
+.nav-list img {
+  width: 80px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu a:hover {
+  color: rgb(121, 116, 116);
+  transition: 0.4s;
+}
+
+.menu li {
+  margin: 0 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+.menu li ul {
+  display: none;
+  position: fixed;
+  list-style: none;
+  background-color: rgb(185, 185, 185);
+}
+
+.menu li ul:hover {
+  transition: 0.4s;
+}
+
+.menu li:hover ul {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.menu li ul li {
+  margin: auto;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 110vh;
+  opacity: 0.9;
+  display: block;
+}
+
+.texto, .texto2 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  transform: translate(-50%, -20%);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-size: 14px;
+  width: 30%;
+}
+
+.texto p {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+
+.texto button {
+  width: 50%;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(139, 138, 138);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.texto button:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.texto2 p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+
+#sobre {
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  scroll-margin-top: 100px;
+  width: 75%;
+}
+
+#sobre h1 {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+#sobre img {
+  margin-top: 50px;
+}
+
+#sobre p {
+  text-align: justify;
+}
+
+.tech {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tech p {
+  font-size: 20px;
+  max-width: 50%;
+  margin: 5%;
+}
+
+.tech img {
+  width: 350px;
+}
+
+#produtos {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  scroll-margin-top: 150px;
+}
+
+#produtos img {
+  width: 500px;
+  margin-top: 5%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#produtos img:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+#produtos button {
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 15%;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  background-color: rgb(139, 138, 138);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+#produtos button:hover {
+  color: white;
+}
+
+#produtos a {
+  width: 100%;
+}
+
+#produtos h1 {
+  margin-bottom: 5%;
+  font-size: 50px;
+}
+
+#produtos #image {
+  display: flex;
+  font-size: 40px;
+  background: rgb(30, 38, 42);
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#produtos #image h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+#produtos h2 {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+#produtos p {
+  margin-top: 20px;
+  font-size: 20px;
+  max-width: 30%;
+  text-align: justify;
+}
+
+#equipe {
+  scroll-margin-top: 150px;
+}
+
+#autores {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+#autores .autor {
+  text-align: center;
+  font-weight: bold;
+}
+
+#autores .autor p {
+  padding: 5px;
+  font-size: 20px;
+}
+
+#autores img {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.icons i {
+  font-size: 40px;
+}
+
+.icons a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.icons a:hover {
+  color: #0077b5;
+  transition: 0.4s ease;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 40px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+#contato {
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+  box-shadow: inset 0px 0px 7px 1px;
+  width: 40%;
+  background-color: rgb(197, 197, 197);
+  border-radius: 15px;
+  scroll-margin-top: 250px;
+}
+
+#contato h1 {
+  text-align: center;
+}
+
+#fale-conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.fale-conosco h1 {
+  font-size: 40px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.formulario input, textarea {
+  border-radius: 5px;
+  margin: 10px;
+  width: 40%;
+  font-family: "Rubik", sans-serif;
+}
+
+.formulario input {
+  height: 1.9rem;
+}
+
+.formulario textarea {
+  height: 10vh;
+}
+
+.formulario button {
+  width: 20%;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(139, 138, 138);
+  border: none;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.rodape {
+  margin-top: 20%;
+  background: rgb(30, 38, 42);
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 20px;
+}
+
+.texto-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logo-rodape p {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  margin: 0;
+}
+
+.logo-rodape img {
+  width: 100px;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+}
+
+.rodape span {
+  font-size: 30px;
+  margin-left: 40px;
+  color: #e5e0da;
+}
+
+.rodape a {
+  color: inherit;
+}
+
+.rodape a:hover {
+  color: #0077b5;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list img {
+    width: 80px;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(30, 38, 42);
+    border-radius: 5%;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .menu.show {
+    display: flex;
+    align-items: flex-end;
+    width: 20%;
+    margin-top: 30px;
+  }
+  .menu a:hover {
+    color: rgb(121, 116, 116);
+    transition: 0.4s;
+  }
+  .menu li {
+    font-size: 15px;
+    margin: 20px;
+  }
+  .slideshow img {
+    height: 80vh;
+  }
+  .prev, .next {
+    top: 50%;
+  }
+  .texto button {
+    width: 100%;
+  }
+  #sobre h1 {
+    font-size: 30px;
+  }
+  #sobre img {
+    width: 180px;
+  }
+  #sobre p {
+    font-size: 20px;
+    max-width: 75%;
+  }
+  #produtos #image h1 {
+    margin: 0;
+  }
+  #produtos h2 {
+    font-size: 30px;
+  }
+  #produtos p {
+    max-width: 50%;
+  }
+  #produtos img {
+    width: 250px;
+  }
+  #produtos button {
+    width: 25%;
+    font-size: 25px;
+  }
+  #autores img {
+    height: 300px;
+    width: 250px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .icons i {
+    font-size: 25px;
+  }
+  #contato {
+    width: 85%;
+  }
+  .texto p {
+    font-size: 40px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slideshow {
+    height: 50vh;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
