@@ -1,16 +1,17 @@
 <?php
+ob_start();
 require('connect.php');
 
 extract($_POST);
-$senha = md5($senha);
 
-if(mysqli_query($con,"INSERT INTO `clientes` (`nome`, `email`, `telefone`, `mensagem`) VALUES ('$nome', '$email', '$telefone', '$mensagem');")){
-    $msg = "Registro concluído";
-}else{
-    $msg = "Erro ao criar registro";
+if (mysqli_query($con, "INSERT INTO `clientes` (`nome`, `email`, `telefone`, `mensagem`) VALUES ('$nome', '$email', '$telefone', '$mensagem');")) {
+    $response = ["status" => "success", "msg" => "Mensagem enviada!"];
+} else {
+    $response = ["status" => "error", "msg" => "Erro ao criar registro: " . mysqli_error($con)];
 }
 
-session_start();
-$_SESSION['msg'] = $msg;
-header('location:index.html');
-?>
+header('Content-Type: application/json');
+echo json_encode($response);
+
+ob_end_flush(); // Encerra o buffer de saída
+exit; // Garante que o script termine imediatamente

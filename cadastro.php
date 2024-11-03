@@ -109,8 +109,9 @@
 
         <div class="container">
             <section id="contato" class="fade-in">
-                <?php require ('connect.php')?>
-                <form action="./php/cadastro.act.php" method="post">
+                <?php ?>
+                
+                <form action="./php/cadastro.act.php" method="post" id="contatoForm">
                     <div class="formulario">    
                         <label>Nome:</label>
                             <input type="text" placeholder="Digite seu nome.." name="nome" required>
@@ -122,6 +123,7 @@
                             <textarea name="mensagem" id="txt_contato" placeholder="Digite sua mensagem" maxlength="200" required></textarea>
                         <button type="submit">Enviar</button>
                     </div>
+                    <div id="msg"></div>
                 </form> 
             </section>
         </div>

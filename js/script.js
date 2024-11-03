@@ -46,3 +46,28 @@ const menu = document.getElementById('menu');
 hamburger.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
+
+document.getElementById('contatoForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var formData = new FormData(this);
+
+    fetch('./php/cadastro.act.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro HTTP: ' + response.status); // Lança erro se o status não for "ok"
+        }
+        return response.json(); // Tenta converter para JSON apenas se o status for "ok"
+    })
+    .then(data => {
+        console.log(data);
+        document.getElementById('msg').innerText = data.msg;
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        document.getElementById('msg').innerText = 'Ocorreu um erro ao enviar o formulário';
+    });
+});

@@ -383,6 +383,11 @@ main{
     flex-direction: column;
 }
 
+#msg{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .formulario input, textarea{
     border-radius: 5px;
     margin:10px;
