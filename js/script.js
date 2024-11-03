@@ -52,7 +52,7 @@ document.getElementById('contatoForm').addEventListener('submit', function(event
 
     var formData = new FormData(this);
 
-    fetch('./php/cadastro.act.php', {
+    fetch('cadastro.act.php', {
         method: 'POST',
         body: formData
     })
@@ -65,6 +65,7 @@ document.getElementById('contatoForm').addEventListener('submit', function(event
     .then(data => {
         console.log(data);
         document.getElementById('msg').innerText = data.msg;
+        this.reset();
     })
     .catch(error => {
         console.error('Erro:', error);

@@ -111,7 +111,7 @@
             <section id="contato" class="fade-in">
                 <?php ?>
                 
-                <form action="./php/cadastro.act.php" method="post" id="contatoForm">
+                <form action="/php/cadastro.act.php" method="post" id="contatoForm">
                     <div class="formulario">    
                         <label>Nome:</label>
                             <input type="text" placeholder="Digite seu nome.." name="nome" required>
