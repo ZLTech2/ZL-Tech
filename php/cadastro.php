@@ -42,7 +42,7 @@
     <main>
         <div class="slideshow">
             <div class="fade-in">
-                <img src="../assets/images/Fechamento.png" alt="Imagem de duas pessoas apertando as mãos">
+                <img src="../assets/images/fechamento.jpg" alt="Imagem de duas pessoas apertando as mãos">
                 <div class="texto">
                     <p>Impulsione suas vendas</p>
                     <a href="#"><button type="button">Cadastre-se</button></a>
