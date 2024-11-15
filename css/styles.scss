@@ -1,6 +1,7 @@
 $fonte-geral: "Rubik", sans-serif;
 $cor-botões: rgb(139,138,138);
 $tam-fonte-titulo: 40px;
+$cor-verde: rgb(30,38,42);
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +13,15 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body.light-mode{
   font-family: $fonte-geral;
   background-color: #e5e0da;
+}
+
+body.dark-mode{
+    font-family: $fonte-geral;
+    background-color: $cor-verde;
+    color: white;
 }
 
 header{
@@ -28,7 +35,7 @@ main{
     margin-top: 60px;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;

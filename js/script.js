@@ -72,3 +72,32 @@ document.getElementById('contatoForm').addEventListener('submit', function(event
         document.getElementById('msg').innerText = 'Ocorreu um erro ao enviar o formulário';
     });
 });
+
+// Acessa o botão de alternância de tema
+const toggleButton = document.getElementById('toggle-theme');
+
+// Verifica se há um tema salvo no localStorage
+const savedTheme = localStorage.getItem('theme');
+
+// Se um tema foi salvo, aplica esse tema
+if (savedTheme) {
+    document.body.classList.add(savedTheme);
+} else {
+    // Se nenhum tema foi salvo, define o modo claro como padrão
+    document.body.classList.add('light-mode');
+}
+
+// Função para alternar entre os temas
+toggleButton.addEventListener('click', () => {
+    if (document.body.classList.contains('light-mode')) {
+        // Mudar para modo escuro
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode'); // Salva a escolha do tema
+    } else {
+        // Mudar para modo claro
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light-mode'); // Salva a escolha do tema
+    }
+});

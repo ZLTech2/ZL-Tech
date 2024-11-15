@@ -49,6 +49,8 @@
                 </div>
             </div>
         </div>
+
+        <button id="toggle-theme">Alternar Modo</button>
         
         <div class="container">
             <section id="sobre">

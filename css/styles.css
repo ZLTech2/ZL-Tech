@@ -8,9 +8,15 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body.light-mode {
   font-family: "Rubik", sans-serif;
   background-color: #e5e0da;
+}
+
+body.dark-mode {
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(30, 38, 42);
+  color: white;
 }
 
 header {
