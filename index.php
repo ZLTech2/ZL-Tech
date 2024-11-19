@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <nav>
         <div class="nav-list">
                 <div class="logo">
-                    <a href="../index.html"><img src="../assets/images/logo_branca.png" alt="Logo da ZL Tech"></a>
+                    <a href="./index.php"><img src="./assets/images/logo_branca.png" alt="Logo da ZL Tech"></a>
                 </div>
 
                 <div class="hamburger" id="hamburger">
@@ -42,7 +42,7 @@
     <main>
         <div class="slideshow">
             <div class="fade-in">
-                <img src="../assets/images/fechamento.jpg" alt="Imagem de duas pessoas apertando as mãos">
+                <img src="./assets/images/fechamento.jpg" alt="Imagem de duas pessoas apertando as mãos">
                 <div class="texto">
                     <p>Impulsione suas vendas</p>
                     <a href="#"><button type="button">Cadastre-se</button></a>
@@ -50,13 +50,13 @@
             </div>
         </div>
 
-        <button id="toggle-theme">Alternar Modo</button>
+        <!-- <button id="toggle-theme">Alternar Modo</button> -->
         
         <div class="container">
             <section id="sobre">
                 <div class="tech">
                 <h1 class="fade-in">Quem somos?</h1>
-                <img src="../assets/images/logo.png" alt="Logo da ZL Tech" class="fade-in">
+                <img src="./assets/images/logo.png" alt="Logo da ZL Tech" class="fade-in">
                 <p class="fade-in">
                     A ZL Tech é uma empresa criada pelos alunos Artur Normandia Silva e Rafael Benício Santos da Fatec Ferraz de Vasconcelos. A empresa foi criada com o slogan "Mesmo distante, ainda pode chegar longe.", que leva em consideração, as pequenas empresas que possam divulgar seu negócio no nosso serviço e assim alavancar suas vendas.
                 </p>
@@ -70,7 +70,7 @@
         </div>
             <h2 class="fade-in">Negócio na Área</h2>
             <p class="fade-in">Principal produto da empresa, uma plataforma de divulgação para pequenos negócios na zona Leste de São Paulo.</p>
-            <img src="../assets/images/logo rd.png" alt="Logo negócio na área" class="fade-in">
+            <img src="./assets/images/logo rd.png" alt="Logo negócio na área" class="fade-in">
             <a href="#"><button type="button" class="fade-in"">Saiba mais</button></a>
         </section>
  
@@ -85,7 +85,7 @@
                 <div class="autor">
                     <p class="fade-in"> Artur Normandia </p>
                     <p class="fade-in">Front-end </p>
-                    <img src="../assets/images/foto artur.jpg" alt="Foto dp Artur" class="fade-in">
+                    <img src="./assets/images/foto artur.jpg" alt="Foto dp Artur" class="fade-in">
                 <div class="icons">
                     <p class="fade-in"><a href="https://www.linkedin.com/in/artur-normandia-64a865265/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p>
                     <p class="fade-in"><a href="https://www.instagram.com/artuzaou/ "target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></p>
@@ -95,7 +95,7 @@
             <div class="autor">
                     <p class="fade-in">Rafael Benício</p>
                     <p class="fade-in">Full Stack</p>
-                    <img src="../assets/images/foto1.jpg" alt="Foto do Rafael" class="fade-in">
+                    <img src="./assets/images/foto1.jpg" alt="Foto do Rafael" class="fade-in">
                 <div class="icons">
                     <p class="fade-in"><a href="https://www.linkedin.com/in/rafael-ben%C3%ADcio-santos-b2a8a3235/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p>
                     <p class="fade-in"><a href="https://www.instagram.com/rafael.b_/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></p>
@@ -113,7 +113,7 @@
             <section id="contato" class="fade-in">
                 <?php ?>
                 
-                <form action="/php/cadastro.act.php" method="post" id="contatoForm">
+                <form action="./php/cadastro.act.php" method="post" id="contatoForm">
                     <div class="formulario">    
                         <label>Nome:</label>
                             <input type="text" placeholder="Digite seu nome.." name="nome" required>
@@ -132,7 +132,7 @@
     </main>
         <footer class="rodape">
             <div class="logo-rodape">
-                <img src="../assets/images/logo_branca.png" alt="Logo da ZL Tech">
+                <img src="./assets/images/logo_branca.png" alt="Logo da ZL Tech">
                 <div class="texto-rodape">
                     <p>&copy;ZL Tech: Todos os direitos reservados.</p>
                     <div class="redes-sociais">
@@ -144,6 +144,6 @@
             </div>
         </footer>
  
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@ document.getElementById('contatoForm').addEventListener('submit', function(event
 
     var formData = new FormData(this);
 
-    fetch('cadastro.act.php', {
+    fetch('./php/cadastro.act.php', {
         method: 'POST',
         body: formData
     })
@@ -87,17 +87,17 @@ if (savedTheme) {
     document.body.classList.add('light-mode');
 }
 
-// Função para alternar entre os temas
-toggleButton.addEventListener('click', () => {
-    if (document.body.classList.contains('light-mode')) {
-        // Mudar para modo escuro
-        document.body.classList.remove('light-mode');
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark-mode'); // Salva a escolha do tema
-    } else {
-        // Mudar para modo claro
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
-        localStorage.setItem('theme', 'light-mode'); // Salva a escolha do tema
-    }
-});
+// // Função para alternar entre os temas
+// toggleButton.addEventListener('click', () => {
+//     if (document.body.classList.contains('light-mode')) {
+//         // Mudar para modo escuro
+//         document.body.classList.remove('light-mode');
+//         document.body.classList.add('dark-mode');
+//         localStorage.setItem('theme', 'dark-mode'); // Salva a escolha do tema
+//     } else {
+//         // Mudar para modo claro
+//         document.body.classList.remove('dark-mode');
+//         document.body.classList.add('light-mode');
+//         localStorage.setItem('theme', 'light-mode'); // Salva a escolha do tema
+//     }
+// });
