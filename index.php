@@ -120,7 +120,7 @@
                         <label for="email">Email:</label>
                             <input type="email" placeholder="Digite seu email.." name="email" required>
                         <label for="telefone">Telefone:</label>
-                            <input type="tel" placeholder="Digite o número de telefone" name="telefone" required>
+                            <input type="tel" id="telefone" placeholder="Digite o número de telefone" maxlength="12" name="telefone" required>
                         <label for="mensagem">Deixe sua mensagem:</label>
                             <textarea name="mensagem" id="txt_contato" placeholder="Digite sua mensagem" maxlength="200" required></textarea>
                         <button type="submit">Enviar</button>
